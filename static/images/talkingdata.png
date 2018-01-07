@@ -1,0 +1,267 @@
+.ms-controller,
+.ms-important,
+[ms-controller],
+[ms-important] {
+	display: none;
+	visibility: hidden;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+
+/*copy by bootstrap*/
+
+.pm-col-20 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	width: 20%;
+}
+
+
+/*for pm transform*/
+
+.hover-transform {
+	margin: 5px 0;
+	padding: 10px;
+
+	border: 1px solid #e4ecf3;
+	border-radius: 4px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.hover-transform:hover {
+	-webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+	-moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+	box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-border {
+	border: none;
+}
+
+
+/*for box-shadow*/
+
+.box-shadow {
+	-webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+
+/*start*/
+
+.main {
+	position: relative;
+}
+
+.menu {
+	width: 244px;
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 20;
+	/*box-shadow: 0 0 1rem rgba(0, 0, 0, .1);*/
+	height: 100vh;
+}
+
+.menu .menu-logo {
+	border-bottom: #ddd 1px solid;
+}
+
+.menu .menu-logo a {
+	width: 100%;
+}
+
+.menu .menu-logo a img {
+	width: 100%;
+}
+
+.menu .menu-nav {
+	margin-bottom: 200px;
+	height: calc(100vh - 230px);
+	overflow-y: auto;
+}
+
+.menu .menu-list {}
+
+.menu .menu-list li {
+	margin-top: 3px;
+}
+
+.menu .menu-list li a {
+	display: block;
+	padding: 3px 0 3px 0;
+	font-size: 14px;
+	line-height: 26px;
+	height: 32px;
+	text-decoration: none;
+	color: #666;
+	text-align: center;
+}
+
+.menu .menu-list li a:hover {
+	background: #515151;
+	color: #ffffff;
+}
+
+.menu .menu-share {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	z-index: 30;
+	left: 0;
+	bottom: 0;
+}
+
+.menu-share {
+	padding: 20px;
+	font-size: 18px;
+	line-height: 30px;
+	color: #666;
+}
+
+.menu .bdsharebuttonbox a.share-btn {
+	margin-left: 6px;
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: #fff;
+	color: #5491ff;
+	width: 22px;
+	height: 22px;
+}
+
+.menu .bdsharebuttonbox a.share-btn.tsina {
+	background-image: url(../images/tsina.png) !important;
+}
+
+.menu .bdsharebuttonbox a.share-btn.qzone {
+	background-image: url(../images/qzone.png) !important;
+}
+
+.menu .bdsharebuttonbox a.share-btn.weixin {
+	background-image: url(../images/weixin.png) !important;
+}
+
+.menu .bdsharebuttonbox p.share-text {
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.alert {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.content {
+	padding-left: 244px;
+	height: calc(100vh - 20px);
+	position: relative;
+}
+
+.content-box {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.full-img {
+	display: block;
+}
+
+.full-img img {
+	width: 100%;
+}
+
+.panel {
+	margin: 20px 0;
+}
+
+.panel-default>.panel-heading {
+	padding: 20px 15px 0 15px;
+	background-color: #ffffff;
+	border-bottom: none;
+}
+
+.web-logo {
+	width: 35px;
+	height: 35px;
+}
+
+.pm-link {
+	display: block;
+}
+
+.web-name {
+	width: calc(100% - 60px);
+	height: 35px;
+	padding-left: .5em;
+	font-size: 18px;
+	line-height: 35px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.web-content-bottom {
+	padding: 5px 0;
+	height: 50px;
+}
+
+.footer {
+	width: 100%;
+	position: fixed;
+	left: 0%;
+	bottom: 0%;
+	z-index: 10;
+	padding-left: 260px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+	.menu {
+		width: 100%;
+		height: inherit;
+		position: inherit;
+	}
+	.content {
+		padding-left: 0;
+	}
+	.footer {
+		width: 100%;
+		position: fixed;
+		left: 0%;
+		bottom: 0%;
+		z-index: 10;
+		padding-left: 0;
+		text-indent: 2em;
+		height: 40px;
+		line-height: 20px;
+		text-align: center;
+	}
+}

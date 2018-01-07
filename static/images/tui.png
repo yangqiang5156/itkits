@@ -1,0 +1,17 @@
+@charset "utf-8";
+html{overflow-y:scroll;}
+body{margin:0;padding:0;background:#fff;font:12px/1.5 \5FAE\8F6F\96C5\9ED1,\5b8b\4f53,Arial,sans-serif;}
+blockquote,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,textarea,ul{margin:0;padding:0;}
+table,td,th,tr{font-size:12px;}
+ol,ul{list-style:none;}
+li{list-style-type:none;}
+img{border:0;vertical-align:top;display: block;}
+input{outline:0;border:#DDD 1px solid;}
+input::-ms-clear{display:none;}
+h1,h2,h3,h4,h5,h6{font-weight:400;font-size:inherit;}
+address,cite,code,em,i,th{font-weight:400;font-style:normal;}
+table{border:0;border-collapse:collapse;border-spacing:0;cellspacing:0;cellpadding:0;}
+a{display:inline-block;text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}

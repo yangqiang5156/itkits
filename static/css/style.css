@@ -1,0 +1,266 @@
+/**
+ * Body CSS
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+html,
+body,
+input,
+textarea,
+buttons {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+/*清除浮动*/
+
+.cf:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+/**
+ * Layout CSS
+ */
+
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transition: left 0.2s;
+}
+
+#sidedrawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  left: -200px;
+  overflow: auto;
+  z-index: 2;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+#content-wrapper {
+  min-height: 100%;
+  overflow-x: hidden;
+  margin-left: 0px;
+  transition: margin-left 0.2s;
+  
+  /* sticky bottom */
+  box-sizing: border-box;
+  margin-bottom: 160px;
+  padding-bottom: 160px;
+}
+
+#footer {
+  box-sizing: border-box;
+  height: 160px;
+  margin-left: 0px;
+  transition: margin-left 0.2s;
+}
+
+@media (min-width: 768px) {
+  #header {
+    left: 200px;
+  }
+  
+  #sidedrawer {
+    transform: translate(200px);
+  }
+  
+  #content-wrapper {
+    margin-left: 200px;
+  }
+  
+  #footer {
+    margin-left: 200px;
+  }
+  
+  body.hide-sidedrawer #header {
+    left: 0;
+  }
+  
+  body.hide-sidedrawer #sidedrawer {
+    transform: translate(0px);
+  }
+  
+  body.hide-sidedrawer #content-wrapper {
+    margin-left: 0;
+  }
+  
+  body.hide-sidedrawer #footer {
+    margin-left: 0;
+  }
+}
+
+
+/**
+ * Toggle Sidedrawer
+ */
+#sidedrawer.active {
+  transform: translate(200px);
+}
+
+
+/**
+ * Header CSS
+ */
+
+.sidedrawer-toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.sidedrawer-toggle:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/**
+ * Sidedrawer CSS
+ */
+
+#sidedrawer-brand {
+  padding-left: 20px;
+}
+
+#sidedrawer ul {
+  list-style: none;
+}
+
+#sidedrawer > ul {
+  padding-left: 0px;
+}
+
+#sidedrawer > ul > li:first-child {
+  padding-top: 15px;
+}
+
+#sidedrawer strong {
+  display: block;
+  padding: 15px 22px;
+  cursor: pointer;
+}
+
+#sidedrawer strong:hover {
+  background-color: #E0E0E0;
+}
+
+#sidedrawer strong + ul > li {
+  padding: 6px 0px;
+}
+
+
+/**
+ * Footer CSS
+ */
+
+#footer {
+  background-color: #0288D1;
+  color: #fff;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/* markyang */
+.pannel-wrap{
+  box-sizing: border-box;
+  padding:0 10px;
+}
+.pannel {
+  margin: 20px 0;
+  padding: 10px 0px;
+}
+
+.panner-header h3{
+  padding:10px 15px;
+  margin: 4px 0;
+}
+
+.pannel-list {
+	margin: 5px 0;
+	padding: 10px;
+	border: 1px solid #e4ecf3;
+	border-radius: 4px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.pannel-list:hover {
+	-webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+	-moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+	box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+.list-link{
+  display:block;
+}
+.web-logo{
+  float:left;
+}
+.web-name {
+  float:left;
+  width: calc(100% - 60px);
+  height: 35px;
+  padding-left: .5em;
+  font-size: 18px;
+  line-height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.web-desc{
+  width:100%;
+  height:20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#nav-list{
+  padding:0;
+}

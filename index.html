@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="static/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="static/js/mui.min.js"></script>
+  <script src="static/js/jquery-2.1.4.min.js"></script>
+  <script src="static/js/allData.js"></script>
+  <script src="static/js/vue.js"></script>
+  <script src="static/js/script.js"></script>
+</head>
+
+<body>
+  <div id="sidedrawer" class="mui--no-user-select box-shadow">
+    <div id="sidedrawer-brand" class="mui--appbar-line-height">
+      <span class="mui--text-title">IT Kit</span>
+    </div>
+    <div class="mui-divider"></div>
+    <div id="app-nav">
+        <ul id="nav-list">
+          <li>
+            <strong>product</strong>
+            <ul style="display:block;">
+              <li v-for = "nav in navList">
+                <a href="#">{{nav.title}}</a>
+              </li>          
+            </ul>
+          </li>     
+        </ul>
+    </div>
+
+  </div>
+  <header id="header">
+    <div class="mui-appbar mui--appbar-line-height">
+      <div class="mui-container-fluid">
+        <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+        <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+        <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">IT Kit</span>
+      </div>
+    </div>
+  </header>
+  <div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+    <div class="pannel-wrap">
+
+
+      <div class="pannel box-shadow" id="app-pannel" v-for="pannel in pannelList" >
+        <div >
+          <div class="panner-header">
+            <h3>{{pannel.title}}</h3>
+          </div>
+          <div class="panner-body">
+            <div class="mui-container-fluid">
+              <div class="mui-row">
+                <div class="mui-col-sm-6 mui-col-md-4 mui-col-lg-3">
+                  <a class="list-link" target="_blank">
+                    <div class="pannel-list">
+                      <div class="cf">
+                        <div class="web-logo">
+                          <img class="img-responsive" width="35" height="35" src="static/images/0001.jpg">
+                        </div>
+                        <span class="web-name">人人都是产品经理人人都是产品经理人人都是产品经理</span>
+                      </div>
+                      <div class="web-desc">
+                        全球最大的产品经理社群全球最大的产品经理社群全球最大的产品经理社群
+                      </div>
+                    </div>
+                  </a>
+                </div>       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <footer id="footer">
+    <div class="mui-container-fluid">
+      <br> Made by
+      <a href="https://www.app-dev.cn">风林火山</a>
+    </div>
+  </footer>
+
+
+
+  <script>
+    var appNav = new Vue({
+      el: '#app-nav',
+      data: {
+        navList: allData.list
+      }
+    })
+    var appPannel = new Vue({
+      el: '#app-pannel',
+      data: {
+        pannelList: allData.list
+      }
+    })
+  </script>
+
+</body>
+
+</html>
