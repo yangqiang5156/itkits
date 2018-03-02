@@ -10,72 +10,61 @@
   <script src="static/js/mui.min.js"></script>
   <script src="static/js/jquery-2.1.4.min.js"></script>
   <script src="static/js/allData.js"></script>
-  <script src="static/js/vue.js"></script>
   <script src="static/js/script.js"></script>
+
 </head>
 
 <body>
   <div id="sidedrawer" class="mui--no-user-select box-shadow">
     <div id="sidedrawer-brand" class="mui--appbar-line-height">
-      <span class="mui--text-title">IT Kit</span>
+      <span class="mui--text-title">互联网人导航</span>
     </div>
     <div class="mui-divider"></div>
-    <div id="app-nav">
-        <ul id="nav-list">
-          <li>
-            <strong>product</strong>
-            <ul style="display:block;">
-              <li v-for = "nav in navList">
-                <a href="#">{{nav.title}}</a>
-              </li>          
-            </ul>
-          </li>     
-        </ul>
-    </div>
-
+    <ul id="nav-list">   
+      <!-- <li>
+        <a href="#">Item 1</a>
+      </li> -->
+    </ul>
   </div>
   <header id="header">
     <div class="mui-appbar mui--appbar-line-height">
       <div class="mui-container-fluid">
         <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
         <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
-        <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">IT Kit</span>
+        <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">互联网人导航</span>
       </div>
     </div>
   </header>
   <div id="content-wrapper">
     <div class="mui--appbar-height"></div>
-    <div class="pannel-wrap">
-
-
-      <div class="pannel box-shadow" id="app-pannel" v-for="pannel in pannelList" >
-        <div >
-          <div class="panner-header">
-            <h3>{{pannel.title}}</h3>
-          </div>
-          <div class="panner-body">
-            <div class="mui-container-fluid">
-              <div class="mui-row">
-                <div class="mui-col-sm-6 mui-col-md-4 mui-col-lg-3">
-                  <a class="list-link" target="_blank">
-                    <div class="pannel-list">
-                      <div class="cf">
-                        <div class="web-logo">
-                          <img class="img-responsive" width="35" height="35" src="static/images/0001.jpg">
-                        </div>
-                        <span class="web-name">人人都是产品经理人人都是产品经理人人都是产品经理</span>
+    <div class="pannel-wrap" id="conRight">
+<!-- 
+      <div class="pannel box-shadow">
+        <div class="panner-header">
+          <h3>行业资讯</h3>
+        </div>
+        <div class="panner-body">
+          <div class="mui-container-fluid">
+            <div class="mui-row">
+              <div class="mui-col-sm-6 mui-col-md-4 mui-col-lg-3">
+                <a class="list-link" target="_blank">
+                  <div class="pannel-list">
+                    <div class="cf">
+                      <div class="web-logo">
+                        <img class="img-responsive" width="35" height="35" src="static/images/0001.jpg">
                       </div>
-                      <div class="web-desc">
-                        全球最大的产品经理社群全球最大的产品经理社群全球最大的产品经理社群
-                      </div>
+                      <span class="web-name">xxxxx</span>
                     </div>
-                  </a>
-                </div>       
+                    <div class="web-desc">
+                      xxxx
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -87,21 +76,74 @@
     </div>
   </footer>
 
+<script>
+  $(function(){
+    
+    $("html, body").stop().animate({scrollTop: 0 + "px"}, 500);
+
+    var data = allData.list;
+    $('#nav-list').empty();
+    $('#conRight').empty();
+    //解析左侧导航列表和右侧内容
+    for(var i=0;i<data.length;i++){
+      var leftList = '<li>'+
+        '<a name="#'+data[i].sectionId+'">'+data[i].title+'</a>'+
+      '</li>'
+      $('#nav-list').append(leftList);
+      
+      var detailData = data[i].detail;
+      
+      var innerList = "";
+      for(var j=0;j<detailData.length;j++){
+        innerList += '<div class="mui-col-sm-6 mui-col-md-4 mui-col-lg-3">'+
+              '<a class="list-link" target="_blank" href="'+detailData[j].linkHref+'">'+
+                '<div class="pannel-list">'+
+                  '<div class="cf">'+
+                    '<div class="web-logo">'+
+                      '<img class="img-responsive" width="35" height="35" src="static/'+detailData[j].linkLogo+'">'+
+                    '</div>'+
+                    '<span class="web-name">'+detailData[j].linkTitle+'</span>'+
+                  '</div>'+
+                  '<div class="web-desc">'+detailData[j].linkDescribe+'</div>'+
+                '</div>'+
+              '</a>'+
+            '</div>'
+      }
+      var rightCon = '<div class="pannel box-shadow" id="'+data[i].sectionId+'">'+
+        '<div class="panner-header">'+
+          '<h3>'+data[i].title+'</h3>'+
+        '</div>'+
+        '<div class="panner-body">'+
+          '<div class="mui-container-fluid">'+
+            '<div class="mui-row">'+innerList+'</div>'+
+          '</div>'+
+        '</div>'+
+      '</div>';
+      $('#conRight').append(rightCon);    
+      
+    }
+
+    //默认导航第一个选中
+    //$("#nav-list li a:first").addClass('nav_active');
+
+    //点击左侧导航右侧到对应的导航位置
+
+    $("#nav-list li a").click(function(){
+      //$(this).addClass('nav_active').parent().siblings().children().removeClass('nav_active');
+      var divName = $(this).attr('name');    
+      $("html, body").stop().animate({scrollTop: $(divName).offset().top - 68 + "px"}, 500);
+
+    })
+
+    $("#nav-list li a").hover(function(){
+      $(this).addClass('nav_active').parent().siblings().children().removeClass('nav_active');  
+    },function(){
+      $(this).removeClass('nav_active');
+    })
+
+  })
 
 
-  <script>
-    var appNav = new Vue({
-      el: '#app-nav',
-      data: {
-        navList: allData.list
-      }
-    })
-    var appPannel = new Vue({
-      el: '#app-pannel',
-      data: {
-        pannelList: allData.list
-      }
-    })
   </script>
 
 </body>

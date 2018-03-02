@@ -78,8 +78,7 @@ a {
   
   /* sticky bottom */
   box-sizing: border-box;
-  margin-bottom: 160px;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
 }
 
 #footer {
@@ -155,7 +154,7 @@ a {
  */
 
 #sidedrawer-brand {
-  padding-left: 20px;
+  text-align: center;
 }
 
 #sidedrawer ul {
@@ -263,4 +262,20 @@ a {
 }
 #nav-list{
   padding:0;
+}
+
+#nav-list li a{
+  display: block;
+  box-sizing: border-box;
+  height:30px;
+  line-height: 30px;
+  text-align: center;
+}
+.nav_active{
+  color:#2196F3;
+  border-right: 2px solid #2196F3;
+  background-color: #e6f7ff;
+}
+.panner-header h3{
+  color:#2196F3;
 }

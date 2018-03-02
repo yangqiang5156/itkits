@@ -44,25 +44,6 @@ jQuery(function ($) {
       .slideToggle(200);
   });
 
-  //解析js数据
 
-  var data = itData.data;
-  $("#nav-list").empty();
-
-  for (key in data) {
-
-    var navLi = '<li><strong>' + key + '</strong><ul class="subul_' + key + '"> </ul></li>';
-    $("#nav-list").append(navLi);
-    // var typeList = data[key];
-
-    $(".subul" + key).empty();
-    for (var i = 0; i < data[key].length; i++) {
-
-    var subLi = '<li><a href="#">' + data[key][i]['title'] + '</a></li>';
-    $(".subul" + key).append(subLi);
-    }
-
-
-  }
 
 });
