@@ -12,6 +12,30 @@
   <script src="static/js/allData.js"></script>
   <script src="static/js/script.js"></script>
 
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fe43c0e5f6f1482d3d491d1041959d5c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105082046-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-105082046-1');
+  </script>
+
+
 </head>
 
 <body>
@@ -20,7 +44,7 @@
       <span class="mui--text-title">互联网人导航</span>
     </div>
     <div class="mui-divider"></div>
-    <ul id="nav-list">   
+    <ul id="nav-list">
       <!-- <li>
         <a href="#">Item 1</a>
       </li> -->
@@ -38,7 +62,7 @@
   <div id="content-wrapper">
     <div class="mui--appbar-height"></div>
     <div class="pannel-wrap" id="conRight">
-<!-- 
+      <!-- 
       <div class="pannel box-shadow">
         <div class="panner-header">
           <h3>行业资讯</h3>
@@ -71,79 +95,86 @@
   </div>
   <footer id="footer">
     <div class="mui-container-fluid">
-      <br> Made by
-      <a href="https://www.app-dev.cn">风林火山</a>
+      <div class="erweima"><img src="static/images/erweima.jpg" alt=""></div>
+      <p class="erweima_text">欢迎扫描二维码，关注公众号，提意见哦！</p>
+      <p class="copyright">Copyright©2018&nbsp;风林火山&nbsp;版权所有&nbsp;&nbsp;
+        <a target="_blank" href="http://www.miitbeian.gov.cn">京ICP备17046017号</a>
+      </p>
     </div>
   </footer>
 
-<script>
-  $(function(){
-    
-    $("html, body").stop().animate({scrollTop: 0 + "px"}, 500);
+  <script>
+    $(function () {
 
-    var data = allData.list;
-    $('#nav-list').empty();
-    $('#conRight').empty();
-    //解析左侧导航列表和右侧内容
-    for(var i=0;i<data.length;i++){
-      var leftList = '<li>'+
-        '<a name="#'+data[i].sectionId+'">'+data[i].title+'</a>'+
-      '</li>'
-      $('#nav-list').append(leftList);
-      
-      var detailData = data[i].detail;
-      
-      var innerList = "";
-      for(var j=0;j<detailData.length;j++){
-        innerList += '<div class="mui-col-sm-6 mui-col-md-4 mui-col-lg-3">'+
-              '<a class="list-link" target="_blank" href="'+detailData[j].linkHref+'">'+
-                '<div class="pannel-list">'+
-                  '<div class="cf">'+
-                    '<div class="web-logo">'+
-                      '<img class="img-responsive" width="35" height="35" src="static/'+detailData[j].linkLogo+'">'+
-                    '</div>'+
-                    '<span class="web-name">'+detailData[j].linkTitle+'</span>'+
-                  '</div>'+
-                  '<div class="web-desc">'+detailData[j].linkDescribe+'</div>'+
-                '</div>'+
-              '</a>'+
+      $("html, body").stop().animate({
+        scrollTop: 0 + "px"
+      }, 500);
+
+      var data = allData.list.sort(function(a,b){
+        return a.order - b.order;
+      });
+      $('#nav-list').empty();
+      $('#conRight').empty();
+      //解析左侧导航列表和右侧内容
+      for (var i = 0; i < data.length; i++) {
+        var leftList = '<li>' +
+          '<a name="#' + data[i].sectionId + '">' + data[i].title + '</a>' +
+          '</li>'
+        $('#nav-list').append(leftList);
+
+        var detailData = data[i].detail;
+
+        var innerList = "";
+        for (var j = 0; j < detailData.length; j++) {
+          innerList += '<div class="mui-col-sm-6 mui-col-md-4 mui-col-lg-3">' +
+            '<a class="list-link" target="_blank"  href="' + detailData[j].cellHref + '">' +
+            '<div class="pannel-list">' +
+            '<div class="cf">' +
+            '<div class="web-logo">' +
+            '<img class="img-responsive" width="35" height="35" src="static/' + detailData[j].cellLogo + '">' +
+            '</div>' +
+            '<span class="web-name">' + detailData[j].cellTitle + '</span>' +
+            '</div>' +
+            '<div class="web-desc">' + detailData[j].cellDescribe + '</div>' +
+            '</div>' +
+            '</a>' +
             '</div>'
+        }
+        var rightCon = '<div class="pannel box-shadow" id="' + data[i].sectionId + '">' +
+          '<div class="panner-header">' +
+          '<h3>' + data[i].title + '</h3>' +
+          '</div>' +
+          '<div class="panner-body">' +
+          '<div class="mui-container-fluid">' +
+          '<div class="mui-row">' + innerList + '</div>' +
+          '</div>' +
+          '</div>' +
+          '</div>';
+        $('#conRight').append(rightCon);
+
       }
-      var rightCon = '<div class="pannel box-shadow" id="'+data[i].sectionId+'">'+
-        '<div class="panner-header">'+
-          '<h3>'+data[i].title+'</h3>'+
-        '</div>'+
-        '<div class="panner-body">'+
-          '<div class="mui-container-fluid">'+
-            '<div class="mui-row">'+innerList+'</div>'+
-          '</div>'+
-        '</div>'+
-      '</div>';
-      $('#conRight').append(rightCon);    
-      
-    }
 
-    //默认导航第一个选中
-    //$("#nav-list li a:first").addClass('nav_active');
+      //默认导航第一个选中
+      //$("#nav-list li a:first").addClass('nav_active');
 
-    //点击左侧导航右侧到对应的导航位置
+      //点击左侧导航右侧到对应的导航位置
 
-    $("#nav-list li a").click(function(){
-      //$(this).addClass('nav_active').parent().siblings().children().removeClass('nav_active');
-      var divName = $(this).attr('name');    
-      $("html, body").stop().animate({scrollTop: $(divName).offset().top - 68 + "px"}, 500);
+      $("#nav-list li a").click(function () {
+        //$(this).addClass('nav_active').parent().siblings().children().removeClass('nav_active');
+        var divName = $(this).attr('name');
+        $("html, body").stop().animate({
+          scrollTop: $(divName).offset().top - 68 + "px"
+        }, 500);
+
+      })
+
+      $("#nav-list li a").hover(function () {
+        $(this).addClass('nav_active').parent().siblings().children().removeClass('nav_active');
+      }, function () {
+        $(this).removeClass('nav_active');
+      })
 
     })
-
-    $("#nav-list li a").hover(function(){
-      $(this).addClass('nav_active').parent().siblings().children().removeClass('nav_active');  
-    },function(){
-      $(this).removeClass('nav_active');
-    })
-
-  })
-
-
   </script>
 
 </body>
