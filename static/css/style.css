@@ -23,6 +23,11 @@ buttons {
   -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
   box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
 }
+
+
+
+
+
 a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
@@ -236,7 +241,13 @@ a {
 	transition: all .3s ease;
 	-webkit-transform: translateY(-6px);
 	-moz-transform: translateY(-6px);
-	transform: translateY(-6px);
+  transform: translateY(-6px);
+  
+
+/* box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12),
+0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+transition: box-shadow 0.2s ease; */
+
 }
 .list-link{
   display:block;
@@ -249,7 +260,7 @@ a {
   width: calc(100% - 60px);
   height: 35px;
   padding-left: .5em;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 35px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -281,6 +292,7 @@ a {
 }
 .web-desc{
   color:#666666;
+  font-size: 14px;
 }
 .erweima{
   padding-top:20px;
