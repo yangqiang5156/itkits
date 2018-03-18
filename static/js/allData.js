@@ -1043,7 +1043,14 @@ var allData = {
 			order: 15,
 			icon: 'fa-binoculars',
 			title: '数据可视',
-			detail: [{
+			detail: [
+				{
+					cellHref: 'https://d3js.org/',
+					cellLogo: 'images/d3.png',
+					cellTitle: 'D3',
+					cellDescribe: '灵活度很高的可视化js库'
+				},
+				{
 				cellHref: 'https://antv.alipay.com/',
 				cellLogo: 'images/antv.png',
 				cellTitle: 'ANTV',
@@ -1094,8 +1101,20 @@ var allData = {
 					cellHref: 'https://codepen.io/',
 					cellLogo: 'images/codepen.png',
 					cellTitle: 'codepen',
-					cellDescribe: '分享一些前端动效的代码'
+					cellDescribe: '可以在线分享测试前端代码'
 				},
+				{
+					cellHref: 'http://www.lanrenzhijia.com/',
+					cellLogo: 'images/larenzhijia.png',
+					cellTitle: '懒人之家',
+					cellDescribe: 'js网页特效代码收集'
+				},
+				{
+					cellHref: 'https://docschina.org/',
+					cellLogo: 'images/yingjizhongwen.png',
+					cellTitle: '印记中文',
+					cellDescribe: '前端常用技术文档库'
+				}
 			]
 		}, {
 			sectionId: 'section-17',
@@ -1122,7 +1141,21 @@ var allData = {
 				cellLogo: 'images/ename.png',
 				cellTitle: '易名网',
 				cellDescribe: '国内最大域名交易平台'
-			}]
+			},
+			{
+				cellHref: 'http://rogerdudler.github.io/git-guide/index.zh.html',
+				cellLogo: 'images/git.png',
+				cellTitle: 'Git简明指南',
+				cellDescribe: '助你入门git的简明指南'
+			},
+			{
+				cellHref: 'https://www.json.cn/',
+				cellLogo: 'images/json.png',
+				cellTitle: 'Json.cn',
+				cellDescribe: 'json在线格式化工具'
+			}
+		
+		]
 		}, {
 			sectionId: 'section-18',
 			order: 18,
@@ -1423,7 +1456,19 @@ var allData = {
 				cellLogo: 'images/link-logo.png',
 				cellTitle: '图悦',
 				cellDescribe: '图悦，在线词频分析、词云图制作工具'
-			}]
+			},
+		{
+			cellHref: 'https://www.processon.com/',
+			cellLogo: 'images/processon.png',
+			cellTitle: 'ProcessOn',
+			cellDescribe: '免费在线作图工具'
+		},
+	{
+		cellHref: 'http://geojson.io/#map=4/54.83/92.55',
+		cellLogo: 'images/geojson.png',
+		cellTitle: 'Geojson',
+		cellDescribe: 'geojson构建工具'
+	}]
 		}
 	]
 };
