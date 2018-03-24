@@ -395,156 +395,164 @@ var allData = {
 			order: 5,
 			title: '图库素材',
 			detail: [{
-				cellHref: 'http://www.freepik.com/',
-				cellLogo: 'images/freepik.png',
-				cellTitle: 'Freepic',
-				cellDescribe: '免费高质量矢量图下载'
-			}, {
-				cellHref: 'https://stocksnap.io/',
-				cellLogo: 'images/stocksnap.png',
-				cellTitle: 'stocksnap',
-				cellDescribe: '先进的检索功能，瞬间拥有高质量免费图片'
-			}, {
-				cellHref: 'https://alpha.wallhaven.cc/',
-				cellLogo: 'images/link-logo.png',
-				cellTitle: 'WallHaven',
-				cellDescribe: '老牌图片站'
-			}, {
-				cellHref: 'https://pixabay.com/',
-				cellLogo: 'images/pixabay.png',
-				cellTitle: 'Pixabay',
-				cellDescribe: 'Pixabay是一个充满活力的创意社区，分享免费的图片和视频'
-			}, {
-				cellHref: 'https://www.pexels.com/',
-				cellLogo: 'images/pexels.png',
-				cellTitle: 'Pexels',
-				cellDescribe: '提供高清尺寸且品质优良的免费照片网站'
-			}, {
-				cellHref: 'https://unsplash.com/',
-				cellLogo: 'images/unsplash.png',
-				cellTitle: 'Unsplash',
-				cellDescribe: '全球知名高质量免费版权的图库素材'
-			}, {
-				cellHref: 'https://www.splitshire.com/',
-				cellLogo: 'images/splitshire.png',
-				cellTitle: 'Splitshire',
-				cellDescribe: '免费高清摄影图库'
-			}, {
-				cellHref: 'https://magdeleine.co/browse/',
-				cellLogo: 'images/magdeleine.png',
-				cellTitle: 'Magdeleine',
-				cellDescribe: '免费高清灵感图片'
-			}, {
-				cellHref: 'https://www.foodiesfeed.com/',
-				cellLogo: 'images/foodiesfeed.png',
-				cellTitle: 'foodiesfeed',
-				cellDescribe: '美食类图片素材库'
-			}, {
-				cellHref: 'https://www.flickr.com/explore',
-				cellLogo: 'images/flickr.png',
-				cellTitle: 'Flickr',
-				cellDescribe: '雅虎旗下摄影师图片分享网站'
-			}, {
-				cellHref: 'https://500px.com/',
-				cellLogo: 'images/500px.png',
-				cellTitle: '500px',
-				cellDescribe: '全球著名摄影师图片展示'
-			}, {
-				cellHref: 'https://www.hdwallpapers.net/',
-				cellLogo: 'images/hdwallpapers.png',
-				cellTitle: 'HDwallpapers',
-				cellDescribe: '高清壁纸图片分享网站'
-			}, {
-				cellHref: 'http://www.hellorf.com/',
-				cellLogo: 'images/hellorf.png',
-				cellTitle: 'Hellorf',
-				cellDescribe: '站酷海洛创意收费正版图库'
-			}, {
-				cellHref: 'https://www.pakutaso.com/',
-				cellLogo: 'images/pakutaso.png',
-				cellTitle: 'Pakutaso',
-				cellDescribe: '日式照片素材免费分享站点'
-			}, {
-				cellHref: 'https://giphy.com/',
-				cellLogo: 'images/giphy.png',
-				cellTitle: 'Giphy',
-				cellDescribe: '全球在线动态GIF图片搜索引擎'
-			}, {
-				cellHref: 'http://www.soogif.com/',
-				cellLogo: 'images/soogif.png',
-				cellTitle: 'SOOGIF动图',
-				cellDescribe: 'Gif动图中文搜索平台'
-			}, {
-				cellHref: 'http://www.iconfont.cn/',
-				cellLogo: 'images/iconfont.png',
-				cellTitle: 'iconfont',
-				cellDescribe: '阿里出品，最强大的图标平台'
-			}, {
-				cellHref: 'http://www.easyicon.net/',
-				cellLogo: 'images/easyicon.png',
-				cellTitle: 'easyicon',
-				cellDescribe: '图标搜索大全'
-			}, {
-				cellHref: 'https://thenounproject.com',
-				cellLogo: 'images/thenounproject.png',
-				cellTitle: 'Thenounproject',
-				cellDescribe: '高质量图标下载'
-			}, {
-				cellHref: 'https://www.iconfinder.com',
-				cellLogo: 'images/iconfinder.png',
-				cellTitle: 'Iconfinder',
-				cellDescribe: '高质量付费图标下载'
-			}, {
-				cellHref: 'https://themify.me/themify-icons',
-				cellLogo: 'images/themify.png',
-				cellTitle: 'themify',
-				cellDescribe: '一套免费特色iconfont图标'
-			}, {
-				cellHref: 'https://geticonjar.com/featured-icons/',
-				cellLogo: 'images/geticonjar.png',
-				cellTitle: 'Geticonjar',
-				cellDescribe: '免费图标素材管理工具台'
-			}, {
-				cellHref: 'https://www.flaticon.com/',
-				cellLogo: 'images/flaticon.png',
-				cellTitle: 'Flaticon',
-				cellDescribe: '海量扁平化免费的图标库'
-			}, {
-				cellHref: 'https://iconstore.co/',
-				cellLogo: 'images/iconstore.png',
-				cellTitle: 'Iconstore',
-				cellDescribe: '免费商用的高质量图标素材站'
-			}, {
-				cellHref: 'http://iosicongallery.com/',
-				cellLogo: 'images/iosicongallery.png',
-				cellTitle: 'Iosicongallery',
-				cellDescribe: 'IOS平台APP图标收录和欣赏'
-			}, {
-				cellHref: 'http://www.iconninja.com/',
-				cellLogo: 'images/iconninja.png',
-				cellTitle: 'Iconninja',
-				cellDescribe: '海量图标搜索可生成css sprites'
-			}, {
-				cellHref: 'https://www.emojione.com/emoji/v3',
-				cellLogo: 'images/emojione.png',
-				cellTitle: 'emojione',
-				cellDescribe: 'Emoji表情图标整理'
-			}, {
-				cellHref: 'https://icons8.com/icon/new-icons/all',
-				cellLogo: 'images/icons8.png',
-				cellTitle: 'Icons8',
-				cellDescribe: '系统平台风格和web图标库'
-			}, {
-				cellHref: 'http://www.iconsfeed.com/',
-				cellLogo: 'images/iconsfeed.png',
-				cellTitle: 'iconsfeed',
-				cellDescribe: 'iOS系统应用图标收集和分享'
-			}, {
-				cellHref: 'http://chuangzaoshi.com/icon/',
-				cellLogo: 'images/caomei.png',
-				cellTitle: '草莓图标',
-				cellDescribe: '为开发者设计的一套免费开源图标'
-			}]
+					cellHref: 'http://www.freepik.com/',
+					cellLogo: 'images/freepik.png',
+					cellTitle: 'Freepic',
+					cellDescribe: '免费高质量矢量图下载'
+				}, {
+					cellHref: 'https://stocksnap.io/',
+					cellLogo: 'images/stocksnap.png',
+					cellTitle: 'stocksnap',
+					cellDescribe: '先进的检索功能，瞬间拥有高质量免费图片'
+				}, {
+					cellHref: 'https://alpha.wallhaven.cc/',
+					cellLogo: 'images/link-logo.png',
+					cellTitle: 'WallHaven',
+					cellDescribe: '老牌图片站'
+				}, {
+					cellHref: 'https://pixabay.com/',
+					cellLogo: 'images/pixabay.png',
+					cellTitle: 'Pixabay',
+					cellDescribe: 'Pixabay是一个充满活力的创意社区，分享免费的图片和视频'
+				}, {
+					cellHref: 'https://www.pexels.com/',
+					cellLogo: 'images/pexels.png',
+					cellTitle: 'Pexels',
+					cellDescribe: '提供高清尺寸且品质优良的免费照片网站'
+				}, {
+					cellHref: 'https://unsplash.com/',
+					cellLogo: 'images/unsplash.png',
+					cellTitle: 'Unsplash',
+					cellDescribe: '全球知名高质量免费版权的图库素材'
+				}, {
+					cellHref: 'https://www.splitshire.com/',
+					cellLogo: 'images/splitshire.png',
+					cellTitle: 'Splitshire',
+					cellDescribe: '免费高清摄影图库'
+				}, {
+					cellHref: 'https://magdeleine.co/browse/',
+					cellLogo: 'images/magdeleine.png',
+					cellTitle: 'Magdeleine',
+					cellDescribe: '免费高清灵感图片'
+				}, {
+					cellHref: 'https://www.foodiesfeed.com/',
+					cellLogo: 'images/foodiesfeed.png',
+					cellTitle: 'foodiesfeed',
+					cellDescribe: '美食类图片素材库'
+				}, {
+					cellHref: 'https://www.flickr.com/explore',
+					cellLogo: 'images/flickr.png',
+					cellTitle: 'Flickr',
+					cellDescribe: '雅虎旗下摄影师图片分享网站'
+				}, {
+					cellHref: 'https://500px.com/',
+					cellLogo: 'images/500px.png',
+					cellTitle: '500px',
+					cellDescribe: '全球著名摄影师图片展示'
+				}, {
+					cellHref: 'https://www.hdwallpapers.net/',
+					cellLogo: 'images/hdwallpapers.png',
+					cellTitle: 'HDwallpapers',
+					cellDescribe: '高清壁纸图片分享网站'
+				}, {
+					cellHref: 'http://www.hellorf.com/',
+					cellLogo: 'images/hellorf.png',
+					cellTitle: 'Hellorf',
+					cellDescribe: '站酷海洛创意收费正版图库'
+				}, {
+					cellHref: 'https://www.pakutaso.com/',
+					cellLogo: 'images/pakutaso.png',
+					cellTitle: 'Pakutaso',
+					cellDescribe: '日式照片素材免费分享站点'
+				}, {
+					cellHref: 'https://giphy.com/',
+					cellLogo: 'images/giphy.png',
+					cellTitle: 'Giphy',
+					cellDescribe: '全球在线动态GIF图片搜索引擎'
+				}, {
+					cellHref: 'http://www.soogif.com/',
+					cellLogo: 'images/soogif.png',
+					cellTitle: 'SOOGIF动图',
+					cellDescribe: 'Gif动图中文搜索平台'
+				}, {
+					cellHref: 'http://www.iconfont.cn/',
+					cellLogo: 'images/iconfont.png',
+					cellTitle: 'iconfont',
+					cellDescribe: '阿里出品，最强大的图标平台'
+				}, {
+					cellHref: 'http://www.easyicon.net/',
+					cellLogo: 'images/easyicon.png',
+					cellTitle: 'easyicon',
+					cellDescribe: '图标搜索大全'
+				}, {
+					cellHref: 'https://thenounproject.com',
+					cellLogo: 'images/thenounproject.png',
+					cellTitle: 'Thenounproject',
+					cellDescribe: '高质量图标下载'
+				}, {
+					cellHref: 'https://www.iconfinder.com',
+					cellLogo: 'images/iconfinder.png',
+					cellTitle: 'Iconfinder',
+					cellDescribe: '高质量付费图标下载'
+				}, {
+					cellHref: 'https://themify.me/themify-icons',
+					cellLogo: 'images/themify.png',
+					cellTitle: 'themify',
+					cellDescribe: '一套免费特色iconfont图标'
+				}, {
+					cellHref: 'https://geticonjar.com/featured-icons/',
+					cellLogo: 'images/geticonjar.png',
+					cellTitle: 'Geticonjar',
+					cellDescribe: '免费图标素材管理工具台'
+				}, {
+					cellHref: 'https://www.flaticon.com/',
+					cellLogo: 'images/flaticon.png',
+					cellTitle: 'Flaticon',
+					cellDescribe: '海量扁平化免费的图标库'
+				}, {
+					cellHref: 'https://iconstore.co/',
+					cellLogo: 'images/iconstore.png',
+					cellTitle: 'Iconstore',
+					cellDescribe: '免费商用的高质量图标素材站'
+				}, {
+					cellHref: 'http://iosicongallery.com/',
+					cellLogo: 'images/iosicongallery.png',
+					cellTitle: 'Iosicongallery',
+					cellDescribe: 'IOS平台APP图标收录和欣赏'
+				}, {
+					cellHref: 'http://www.iconninja.com/',
+					cellLogo: 'images/iconninja.png',
+					cellTitle: 'Iconninja',
+					cellDescribe: '海量图标搜索可生成css sprites'
+				}, {
+					cellHref: 'https://www.emojione.com/emoji/v3',
+					cellLogo: 'images/emojione.png',
+					cellTitle: 'emojione',
+					cellDescribe: 'Emoji表情图标整理'
+				}, {
+					cellHref: 'https://icons8.com/icon/new-icons/all',
+					cellLogo: 'images/icons8.png',
+					cellTitle: 'Icons8',
+					cellDescribe: '系统平台风格和web图标库'
+				}, {
+					cellHref: 'http://www.iconsfeed.com/',
+					cellLogo: 'images/iconsfeed.png',
+					cellTitle: 'iconsfeed',
+					cellDescribe: 'iOS系统应用图标收集和分享'
+				}, {
+					cellHref: 'http://chuangzaoshi.com/icon/',
+					cellLogo: 'images/caomei.png',
+					cellTitle: '草莓图标',
+					cellDescribe: '为开发者设计的一套免费开源图标'
+				},
+				{
+					cellHref: 'https://images.nasa.gov/',
+					cellLogo: 'images/nasa.png',
+					cellTitle: 'NASA图库',
+					cellDescribe: 'NASA图片视频资源库'
+				}
+
+			]
 		},
 		{
 			sectionId: 'section-6',
@@ -857,6 +865,13 @@ var allData = {
 			icon: 'fa-retweet',
 			title: '数据分析',
 			detail: [{
+					cellHref: 'http://hao.199it.com/',
+					cellLogo: 'images/hao199it.png',
+					cellTitle: '大数据导航网站',
+					cellDescribe: '199it旗下大数据导航网址'
+				},
+
+				{
 					cellHref: 'https://www.alexa.com',
 					cellLogo: 'images/alexa.png',
 					cellTitle: 'Alexa 排名',
@@ -1043,34 +1058,34 @@ var allData = {
 			order: 15,
 			icon: 'fa-binoculars',
 			title: '数据可视',
-			detail: [
-				{
+			detail: [{
 					cellHref: 'https://d3js.org/',
 					cellLogo: 'images/d3.png',
 					cellTitle: 'D3',
 					cellDescribe: '灵活度很高的可视化js库'
 				},
 				{
-				cellHref: 'https://antv.alipay.com/',
-				cellLogo: 'images/antv.png',
-				cellTitle: 'ANTV',
-				cellDescribe: '蚂蚁金服数据可视化解决方案'
-			}, {
-				cellHref: 'http://echarts.baidu.com/',
-				cellLogo: 'images/echarts.png',
-				cellTitle: 'Echarts',
-				cellDescribe: '百度出品数据可视化解决方案'
-			}, {
-				cellHref: 'http://tushuo.baidu.com/',
-				cellLogo: 'images/baidu.png',
-				cellTitle: '百度图说',
-				cellDescribe: '百度数据可视化工具'
-			}, {
-				cellHref: 'https://pixelmap.amcharts.com',
-				cellLogo: 'images/pix.png',
-				cellTitle: 'PixelMap',
-				cellDescribe: '在线地图可视化应用'
-			}]
+					cellHref: 'https://antv.alipay.com/',
+					cellLogo: 'images/antv.png',
+					cellTitle: 'ANTV',
+					cellDescribe: '蚂蚁金服数据可视化解决方案'
+				}, {
+					cellHref: 'http://echarts.baidu.com/',
+					cellLogo: 'images/echarts.png',
+					cellTitle: 'Echarts',
+					cellDescribe: '百度出品数据可视化解决方案'
+				}, {
+					cellHref: 'http://tushuo.baidu.com/',
+					cellLogo: 'images/baidu.png',
+					cellTitle: '百度图说',
+					cellDescribe: '百度数据可视化工具'
+				}, {
+					cellHref: 'https://pixelmap.amcharts.com',
+					cellLogo: 'images/pix.png',
+					cellTitle: 'PixelMap',
+					cellDescribe: '在线地图可视化应用'
+				}
+			]
 		}, {
 			sectionId: 'section-16',
 			order: 16,
@@ -1122,40 +1137,40 @@ var allData = {
 			icon: 'fa-vcard-o',
 			title: '后端开发',
 			detail: [{
-				cellHref: 'https://wanwang.aliyun.com/',
-				cellLogo: 'images/wanwang.png',
-				cellTitle: '万网',
-				cellDescribe: '国内最大域名服务商'
-			}, {
-				cellHref: 'https://www.godaddy.com',
-				cellLogo: 'images/godaddy.png',
-				cellTitle: 'Godaddy',
-				cellDescribe: '全球最大域名服务商'
-			}, {
-				cellHref: 'https://www.name.com/',
-				cellLogo: 'images/name.png',
-				cellTitle: 'Name',
-				cellDescribe: '一个很大的域名服务商'
-			}, {
-				cellHref: 'http://www.ename.com/',
-				cellLogo: 'images/ename.png',
-				cellTitle: '易名网',
-				cellDescribe: '国内最大域名交易平台'
-			},
-			{
-				cellHref: 'http://rogerdudler.github.io/git-guide/index.zh.html',
-				cellLogo: 'images/git.png',
-				cellTitle: 'Git简明指南',
-				cellDescribe: '助你入门git的简明指南'
-			},
-			{
-				cellHref: 'https://www.json.cn/',
-				cellLogo: 'images/json.png',
-				cellTitle: 'Json.cn',
-				cellDescribe: 'json在线格式化工具'
-			}
-		
-		]
+					cellHref: 'https://wanwang.aliyun.com/',
+					cellLogo: 'images/wanwang.png',
+					cellTitle: '万网',
+					cellDescribe: '国内最大域名服务商'
+				}, {
+					cellHref: 'https://www.godaddy.com',
+					cellLogo: 'images/godaddy.png',
+					cellTitle: 'Godaddy',
+					cellDescribe: '全球最大域名服务商'
+				}, {
+					cellHref: 'https://www.name.com/',
+					cellLogo: 'images/name.png',
+					cellTitle: 'Name',
+					cellDescribe: '一个很大的域名服务商'
+				}, {
+					cellHref: 'http://www.ename.com/',
+					cellLogo: 'images/ename.png',
+					cellTitle: '易名网',
+					cellDescribe: '国内最大域名交易平台'
+				},
+				{
+					cellHref: 'http://rogerdudler.github.io/git-guide/index.zh.html',
+					cellLogo: 'images/git.png',
+					cellTitle: 'Git简明指南',
+					cellDescribe: '助你入门git的简明指南'
+				},
+				{
+					cellHref: 'https://www.json.cn/',
+					cellLogo: 'images/json.png',
+					cellTitle: 'Json.cn',
+					cellDescribe: 'json在线格式化工具'
+				}
+
+			]
 		}, {
 			sectionId: 'section-18',
 			order: 18,
@@ -1412,63 +1427,70 @@ var allData = {
 			icon: 'fa-th-large',
 			title: '其他工具',
 			detail: [{
-				cellHref: 'http://www.gridzzly.com/',
-				cellLogo: 'images/gridzzly.png',
-				cellTitle: 'Gridzzly',
-				cellDescribe: '自定义网格本，可以打印出来'
-			}, {
-				cellHref: 'http://www.mobile-patterns.com/',
-				cellLogo: 'images/link-logo.png',
-				cellTitle: 'APP界面截图',
-				cellDescribe: '一个APP截图采集网站'
-			}, {
-				cellHref: 'https://smallpdf.com/cn',
-				cellLogo: 'images/smallpdf.png',
-				cellTitle: 'smallPDF',
-				cellDescribe: 'PDF格式互转、压缩工具'
-			}, {
-				cellHref: 'https://www.tianyancha.com/',
-				cellLogo: 'images/tianyancha.png',
-				cellTitle: '天眼查',
-				cellDescribe: '免费查询企业信息'
-			}, {
-				cellHref: 'http://www.kuaifawu.com/',
-				cellLogo: 'images/kuaifawu.png',
-				cellTitle: '快法务',
-				cellDescribe: '企业法律服务、商标、公司注册等'
-			}, {
-				cellHref: 'http://wetest.qq.com/?from=coop_woshipm',
-				cellLogo: 'images/wetest.png',
-				cellTitle: 'WETEST',
-				cellDescribe: '腾讯一站式游戏测试平台'
-			}, {
-				cellHref: 'http://www.dayanzai.me/',
-				cellLogo: 'images/dayanzai.png',
-				cellTitle: '大眼仔下载站',
-				cellDescribe: '下载常用软件破解软件可以看看这里'
-			}, {
-				cellHref: 'http://mail.bccto.me/',
-				cellLogo: 'images/link-logo.png',
-				cellTitle: '10分钟邮箱',
-				cellDescribe: '临时邮箱快速注册、自动刷新接收'
-			}, {
-				cellHref: 'http://www.picdata.cn',
-				cellLogo: 'images/link-logo.png',
-				cellTitle: '图悦',
-				cellDescribe: '图悦，在线词频分析、词云图制作工具'
-			},
-		{
-			cellHref: 'https://www.processon.com/',
-			cellLogo: 'images/processon.png',
-			cellTitle: 'ProcessOn',
-			cellDescribe: '免费在线作图工具'
-		},
-	{
-		cellHref: 'http://geojson.io/#map=4/54.83/92.55',
-		cellLogo: 'images/geojson.png',
-		cellTitle: 'Geojson',
-		cellDescribe: 'geojson构建工具'
-	}]
+					cellHref: 'http://www.gridzzly.com/',
+					cellLogo: 'images/gridzzly.png',
+					cellTitle: 'Gridzzly',
+					cellDescribe: '自定义网格本，可以打印出来'
+				}, {
+					cellHref: 'http://www.mobile-patterns.com/',
+					cellLogo: 'images/link-logo.png',
+					cellTitle: 'APP界面截图',
+					cellDescribe: '一个APP截图采集网站'
+				}, {
+					cellHref: 'https://smallpdf.com/cn',
+					cellLogo: 'images/smallpdf.png',
+					cellTitle: 'smallPDF',
+					cellDescribe: 'PDF格式互转、压缩工具'
+				}, {
+					cellHref: 'https://www.tianyancha.com/',
+					cellLogo: 'images/tianyancha.png',
+					cellTitle: '天眼查',
+					cellDescribe: '免费查询企业信息'
+				}, {
+					cellHref: 'http://www.kuaifawu.com/',
+					cellLogo: 'images/kuaifawu.png',
+					cellTitle: '快法务',
+					cellDescribe: '企业法律服务、商标、公司注册等'
+				}, {
+					cellHref: 'http://wetest.qq.com/?from=coop_woshipm',
+					cellLogo: 'images/wetest.png',
+					cellTitle: 'WETEST',
+					cellDescribe: '腾讯一站式游戏测试平台'
+				}, {
+					cellHref: 'http://www.dayanzai.me/',
+					cellLogo: 'images/dayanzai.png',
+					cellTitle: '大眼仔下载站',
+					cellDescribe: '下载常用软件破解软件可以看看这里'
+				}, {
+					cellHref: 'http://mail.bccto.me/',
+					cellLogo: 'images/link-logo.png',
+					cellTitle: '10分钟邮箱',
+					cellDescribe: '临时邮箱快速注册、自动刷新接收'
+				}, {
+					cellHref: 'http://www.picdata.cn',
+					cellLogo: 'images/link-logo.png',
+					cellTitle: '图悦',
+					cellDescribe: '图悦，在线词频分析、词云图制作工具'
+				},
+				{
+					cellHref: 'https://www.processon.com/',
+					cellLogo: 'images/processon.png',
+					cellTitle: 'ProcessOn',
+					cellDescribe: '免费在线作图工具'
+				},
+				{
+					cellHref: 'http://geojson.io/#map=4/54.83/92.55',
+					cellLogo: 'images/geojson.png',
+					cellTitle: 'Geojson',
+					cellDescribe: 'geojson构建工具'
+				},
+				{
+					cellHref: 'http://office.mmais.com.cn/Template/Home.shtml',
+					cellLogo: 'images/officeplus.png',
+					cellTitle: 'office模板库',
+					cellDescribe: 'word、excel、ppt模板库'
+				}
+			]
 		}
 	]
 };
